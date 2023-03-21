@@ -1,0 +1,50 @@
+.body {
+  background: linear-gradient(to right, #24c6dc, #514a9d);
+  justify-content: center;
+
+  align-items: center;
+}
+
+.card {
+  margin-top: 150px;
+  position: relative;
+  width: 900px;
+  height: auto;
+  overflow-y: auto;
+  background-color: #fff;
+  box-shadow: 0 0 0 8px rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  overflow: hidden;
+  border-top: 3px solid rgba(255, 255, 255, 0.5);
+  transition: 1s;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card p {
+  margin-top: 30px;
+  margin-bottom: 350px;
+  font-size: 20px;
+  float: left;
+  word-break: keep-all;
+  text-align: left;
+}
+
+.card h2 {
+  margin-top: 50px;
+}
+
+.problem {
+  position: absolute;
+  width: 100%;
+  height: 300px;
+  background-color: #b2d0d4;
+  margin: auto;
+  bottom: 0;
+}
+
+.problem label {
+  margin-top: 30px;
+}

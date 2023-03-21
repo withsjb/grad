@@ -9,19 +9,19 @@ export default function Home() {
           <div className={Styles.slide}>
             <figure>
               <Link to="/">
-                <img src="images/window.jpg"></img>
+                <img src="images/os/window.jpg"></img>
               </Link>
               <p className={Styles.textb}>Window</p>
             </figure>
             <figure>
               <Link to="/">
-                <img src="images/linux.png"></img>
+                <img src="images/os/linux.png"></img>
               </Link>
               <p className={Styles.textb}>linux</p>
             </figure>
             <figure>
               <Link to="/">
-                <img src="images/unix.jpg"></img>
+                <img src="images/os/unix.jpg"></img>
                 <p className={Styles.textb}>unix</p>
               </Link>
             </figure>

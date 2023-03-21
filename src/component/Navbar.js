@@ -18,26 +18,30 @@ const Navbar = () => {
         className={Mobile ? Styles.navlinksmobile : Styles.navlinks}
         onClick={() => setMobile(false)}
       >
-        <Link to="/page1">
-          <li className={Styles.navli}>
-            roadmap
-            <ul className={Styles.dropmenu}>
-              <li>roadmap1</li>
-              <li>roadmap2</li>
-              <li>roadmap3</li>
-            </ul>{" "}
-          </li>
-        </Link>
-        <Link to="/page2">
-          <li className={Styles.navli}>
-            wargame
-            <ul className={Styles.dropmenu}>
-              <li>wargame1</li>
-              <li>wargame2</li>
-              <li>wargame3</li>
-            </ul>{" "}
-          </li>
-        </Link>
+        <li className={Styles.navli}>
+          roadmap
+          <ul className={Styles.dropmenu}>
+            <Link to="/roadmap">
+              {" "}
+              <li>roadmap1</li>{" "}
+            </Link>
+            <li>roadmap2</li>
+            <li>roadmap3</li>
+          </ul>{" "}
+        </li>
+
+        <li className={Styles.navli}>
+          wargame
+          <ul className={Styles.dropmenu}>
+            <Link to="/problem">
+              {" "}
+              <li>wargame1</li>{" "}
+            </Link>
+            <li>wargame2</li>
+            <li>wargame3</li>
+          </ul>{" "}
+        </li>
+
         <Link to="/">
           <li className={Styles.navli}>
             community
