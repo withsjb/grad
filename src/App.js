@@ -16,6 +16,8 @@ import Modal from "./component/Modal";
 import Book from "./component/Book";
 import Libook from "./component/Libook";
 import Modalknow from "./component/Modalknow";
+import Side from "./component/Side";
+import Page from "./component/Page";
 
 function App() {
   return (
@@ -38,6 +40,8 @@ function App() {
           <Route path="/book" element={<Book />}></Route>
           <Route path="/libook" element={<Libook />}></Route>
           <Route path="/modalknow" element={<Modalknow />}></Route>
+          <Route path="/side" element={<Side />}></Route>
+          <Route path="/page" element={<Page />}></Route>
         </Routes>
       </Router>
     </div>

@@ -25,7 +25,10 @@ const Navbar = () => {
               {" "}
               <li>roadmap1</li>{" "}
             </Link>
-            <li>roadmap2</li>
+            <Link to="/linuxstudy">
+              {" "}
+              <li>linuxstudy</li>
+            </Link>
             <li>roadmap3</li>
           </ul>{" "}
         </li>

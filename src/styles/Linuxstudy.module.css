@@ -36,15 +36,49 @@
   margin-top: 50px;
 }
 
-.problem {
-  position: absolute;
-  width: 100%;
-  height: 300px;
-  background-color: #b2d0d4;
-  margin: auto;
-  bottom: 0;
-}
-
 .problem label {
   margin-top: 30px;
+}
+
+.side {
+  margin: auto;
+  position: fixed;
+  right: 20px;
+  width: 150px;
+  height: 300px;
+  background-color: aquamarine;
+  top: 300px;
+}
+
+.side div {
+  display: flex;
+  flex-direction: column;
+}
+
+.sidespan {
+  background-color: #fff;
+}
+
+.middel {
+  height: 500px;
+}
+
+.subtext {
+  left: 30px;
+  width: 800px;
+  height: auto;
+  background-color: white;
+  border: solid 1px black;
+  font-size: 30px;
+  display: none;
+  transition: all ease 0.5s;
+  position: absolute;
+}
+
+.title {
+  color: blue;
+}
+
+.title:hover + .subtext {
+  display: block;
 }
