@@ -12,8 +12,8 @@ input {
 }
 
 .book {
-  width: 500px;
-  height: 850px;
+  width: 300px;
+  height: 550px;
   position: relative;
   transition-duration: 1s;
   perspective: 1500;
@@ -180,6 +180,8 @@ input {
 
 .checkboxcover:checked ~ .book {
   transform: translateX(200px);
+  width: 600px;
+  height: 850px;
 }
 
 .checkboxcover:checked ~ .book .cover {

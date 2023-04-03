@@ -18,6 +18,7 @@ import Libook from "./component/Libook";
 import Modalknow from "./component/Modalknow";
 import Side from "./component/Side";
 import Page from "./component/Page";
+import Select from "./pages/select/select";
 
 function App() {
   return (
@@ -42,6 +43,7 @@ function App() {
           <Route path="/modalknow" element={<Modalknow />}></Route>
           <Route path="/side" element={<Side />}></Route>
           <Route path="/page" element={<Page />}></Route>
+          <Route path="/select" element={<Select />}></Route>
         </Routes>
       </Router>
     </div>
