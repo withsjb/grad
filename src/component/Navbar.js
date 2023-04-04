@@ -29,7 +29,9 @@ const Navbar = () => {
               {" "}
               <li>linuxstudy</li>
             </Link>
-            <li>roadmap3</li>
+            <Link to="/select">
+              <li>select</li>
+            </Link>
           </ul>{" "}
         </li>
 

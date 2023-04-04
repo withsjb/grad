@@ -35,12 +35,24 @@ input {
   content: "";
   width: 30px;
   height: 100%;
-  background: url(../../../public/images/os/window.jpg);
+  background: #fff;
   position: absolute;
   top: 0;
   left: 0;
   transform: skewY(-45deg) translate(-30px, -15px);
   box-shadow: inset -10px 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.cover:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70%;
+  background: url(../../../public/images/os/window.jpg);
+  background-position: center;
+  background-size: cover;
+  z-index: 9999;
 }
 
 .book:after {
@@ -135,6 +147,30 @@ input {
   z-index: 9999;
 }
 
+.covera:before {
+  content: "";
+  width: 30px;
+  height: 100%;
+  background: url(../../../public/images/os/linux.png);
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: skewY(-45deg) translate(-30px, -15px);
+  box-shadow: inset -10px 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.covera {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70%;
+  background: url(../../../public/images/os/linux.png);
+  background-position: center;
+  background-size: cover;
+  z-index: 9999;
+}
+
 .coverbot {
   background-color: #fff;
   z-index: 9999;
@@ -142,99 +178,6 @@ input {
   bottom: 0;
   width: 100%;
   height: 30%;
-}
-
-.backcover {
-  background-color: #4173a5;
-  width: 100%;
-  height: 100%;
-  border-radius: 0 15px 15px 0;
-  box-shadow: 0 0 5px rgb(41, 41, 41);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transform-origin: center left;
-  position: relative;
-  z-index: -1;
-}
-
-.pagea {
-  z-index: 4;
-  position: absolute;
-  display: none;
-  background-color: white;
-  width: 580px;
-  height: 820px;
-  border-radius: 0 15px 15px 0;
-  margin-top: 10px;
-  transform-origin: left;
-  transform-style: preserve-3d;
-  transform: rotateY(0deg);
-  transition-duration: 1.5s;
-}
-
-.pageb {
-  position: absolute;
-  display: none;
-  background-color: white;
-  width: 580px;
-  height: 820px;
-  border-radius: 0 15px 15px 0;
-  margin-top: 10px;
-  transform-origin: left;
-  transform-style: preserve-3d;
-  transform: rotateY(0deg);
-  transition-duration: 1.5s;
-  z-index: 3;
-}
-
-.pageb img {
-  width: 100%;
-  height: 100%;
-  border-radius: 0 15px 15px 0;
-}
-
-.frontpage {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
-  box-sizing: border-box;
-  padding: 1rem;
-}
-
-.backpage {
-  transform: rotateY(180deg);
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
-  z-index: 99;
-}
-
-.checkboxcover:checked ~ .book {
-  transform: translateX(200px);
-  width: 600px;
-  height: 850px;
-}
-
-.checkboxcover:checked ~ .book .maincover {
-  transition: transform 1.5s, z-index 0.5s 0.5s;
-  transform: rotateY(-180deg);
-  z-index: 1;
-}
-
-.checkboxcover:checked ~ .book .pagea {
-  display: block;
-}
-
-.checkboxcover:checked ~ .book .pageb {
-  display: block;
-}
-
-.checkboxpagea:checked ~ .book .pagea {
-  transform: rotateY(-180deg);
-  z-index: 2;
 }
 
 .overlay {
@@ -248,6 +191,75 @@ input {
   background: rgba(49, 49, 49, 0.8);
 }
 
-.checkboxcover:checked + .overlay {
-  display: block;
+.booka {
+  position: relative;
+  top: 0;
+  width: 400px;
+  height: 600px;
+  background: #fff;
+  transform: rotate(-17.5deg) skewX(10deg);
+  box-shadow: -35px 35px 50px rgba(0, 0, 0, 1);
+  transition: 0.5s;
+  opacity: 1;
+}
+
+.booka:hover {
+  transform: rotate(-17.5deg) skewX(10deg) translate(20px, -20px);
+  box-shadow: -35px 50px 100px rgba(0, 0, 0, 1);
+}
+
+.booka:before {
+  content: "";
+  width: 30px;
+  height: 100%;
+  background: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: skewY(-45deg) translate(-30px, -15px);
+  box-shadow: inset -10px 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.booka:after {
+  content: "";
+  width: 100%;
+  height: 30px;
+  background: #ccc;
+  position: absolute;
+
+  left: 0;
+  bottom: 0;
+  transform: skewX(-45deg) translate(15px, 30px);
+}
+
+.booka h2 {
+  position: absolute;
+  bottom: 100px;
+  left: 20px;
+  font-size: 5em;
+  line-height: 1em;
+  color: #fff;
+  z-index: 10000;
+}
+
+.booka h2 span {
+  background: rgb(188, 44, 126);
+  background-attachment: fixed;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.booka .writer {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  color: #262626;
+  font-size: 0.6em;
+  padding-top: 5px;
+  font-weight: 500;
+  border-top-left-radius: 1px solid #262626;
+}
+
+.booka .writer i {
+  font-weight: 700;
 }
